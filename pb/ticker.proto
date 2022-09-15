@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+
+option go_package = "./entity";
+
+message Ticker {
+  string symbol = 1;
+  string price = 2;
+}

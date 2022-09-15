@@ -1,0 +1,27 @@
+WEBSOCKET ws://localhost:1323/ws/json
+
+###
+WEBSOCKET ws://localhost:1323/ws/binary
+
+###
+WEBSOCKET wss://stream.binance.com:9443/ws/btcusdt@aggTrade
+
+###
+WEBSOCKET wss://stream.binance.com:9443/ws/btcusdt@miniTicker
+
+###
+WEBSOCKET wss://stream.binance.com:9443/ws/btcusdt@aggTrade
+
+{
+  "method": "UNSUBSCRIBE",
+  "params": [
+    "btcusdt@aggTrade"
+  ],
+  "id": 1
+}
+
+
+
+<> 2022-09-06T105147.400.txt
+<> 2022-09-06T105136.400.txt
+<> 2022-09-06T105127.404.json

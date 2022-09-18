@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.28.1
 // 	protoc        v3.21.6
-// source: pb/ticker.proto
+// source: ticker.proto
 
 package entity
 
@@ -32,7 +32,7 @@ type Ticker struct {
 func (x *Ticker) Reset() {
 	*x = Ticker{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_pb_ticker_proto_msgTypes[0]
+		mi := &file_ticker_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -45,7 +45,7 @@ func (x *Ticker) String() string {
 func (*Ticker) ProtoMessage() {}
 
 func (x *Ticker) ProtoReflect() protoreflect.Message {
-	mi := &file_pb_ticker_proto_msgTypes[0]
+	mi := &file_ticker_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -58,7 +58,7 @@ func (x *Ticker) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Ticker.ProtoReflect.Descriptor instead.
 func (*Ticker) Descriptor() ([]byte, []int) {
-	return file_pb_ticker_proto_rawDescGZIP(), []int{0}
+	return file_ticker_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *Ticker) GetSymbol() string {
@@ -75,34 +75,33 @@ func (x *Ticker) GetPrice() string {
 	return ""
 }
 
-var File_pb_ticker_proto protoreflect.FileDescriptor
+var File_ticker_proto protoreflect.FileDescriptor
 
-var file_pb_ticker_proto_rawDesc = []byte{
-	0x0a, 0x0f, 0x70, 0x62, 0x2f, 0x74, 0x69, 0x63, 0x6b, 0x65, 0x72, 0x2e, 0x70, 0x72, 0x6f, 0x74,
-	0x6f, 0x22, 0x36, 0x0a, 0x06, 0x54, 0x69, 0x63, 0x6b, 0x65, 0x72, 0x12, 0x16, 0x0a, 0x06, 0x73,
-	0x79, 0x6d, 0x62, 0x6f, 0x6c, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09, 0x52, 0x06, 0x73, 0x79, 0x6d,
-	0x62, 0x6f, 0x6c, 0x12, 0x14, 0x0a, 0x05, 0x70, 0x72, 0x69, 0x63, 0x65, 0x18, 0x02, 0x20, 0x01,
-	0x28, 0x09, 0x52, 0x05, 0x70, 0x72, 0x69, 0x63, 0x65, 0x42, 0x0a, 0x5a, 0x08, 0x2e, 0x2f, 0x65,
-	0x6e, 0x74, 0x69, 0x74, 0x79, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
+var file_ticker_proto_rawDesc = []byte{
+	0x0a, 0x0c, 0x74, 0x69, 0x63, 0x6b, 0x65, 0x72, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x22, 0x36,
+	0x0a, 0x06, 0x54, 0x69, 0x63, 0x6b, 0x65, 0x72, 0x12, 0x16, 0x0a, 0x06, 0x73, 0x79, 0x6d, 0x62,
+	0x6f, 0x6c, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09, 0x52, 0x06, 0x73, 0x79, 0x6d, 0x62, 0x6f, 0x6c,
+	0x12, 0x14, 0x0a, 0x05, 0x70, 0x72, 0x69, 0x63, 0x65, 0x18, 0x02, 0x20, 0x01, 0x28, 0x09, 0x52,
+	0x05, 0x70, 0x72, 0x69, 0x63, 0x65, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
 }
 
 var (
-	file_pb_ticker_proto_rawDescOnce sync.Once
-	file_pb_ticker_proto_rawDescData = file_pb_ticker_proto_rawDesc
+	file_ticker_proto_rawDescOnce sync.Once
+	file_ticker_proto_rawDescData = file_ticker_proto_rawDesc
 )
 
-func file_pb_ticker_proto_rawDescGZIP() []byte {
-	file_pb_ticker_proto_rawDescOnce.Do(func() {
-		file_pb_ticker_proto_rawDescData = protoimpl.X.CompressGZIP(file_pb_ticker_proto_rawDescData)
+func file_ticker_proto_rawDescGZIP() []byte {
+	file_ticker_proto_rawDescOnce.Do(func() {
+		file_ticker_proto_rawDescData = protoimpl.X.CompressGZIP(file_ticker_proto_rawDescData)
 	})
-	return file_pb_ticker_proto_rawDescData
+	return file_ticker_proto_rawDescData
 }
 
-var file_pb_ticker_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
-var file_pb_ticker_proto_goTypes = []interface{}{
+var file_ticker_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
+var file_ticker_proto_goTypes = []interface{}{
 	(*Ticker)(nil), // 0: Ticker
 }
-var file_pb_ticker_proto_depIdxs = []int32{
+var file_ticker_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for method output_type
 	0, // [0:0] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
@@ -110,13 +109,13 @@ var file_pb_ticker_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for field type_name
 }
 
-func init() { file_pb_ticker_proto_init() }
-func file_pb_ticker_proto_init() {
-	if File_pb_ticker_proto != nil {
+func init() { file_ticker_proto_init() }
+func file_ticker_proto_init() {
+	if File_ticker_proto != nil {
 		return
 	}
 	if !protoimpl.UnsafeEnabled {
-		file_pb_ticker_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_ticker_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Ticker); i {
 			case 0:
 				return &v.state
@@ -133,18 +132,18 @@ func file_pb_ticker_proto_init() {
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_pb_ticker_proto_rawDesc,
+			RawDescriptor: file_ticker_proto_rawDesc,
 			NumEnums:      0,
 			NumMessages:   1,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
-		GoTypes:           file_pb_ticker_proto_goTypes,
-		DependencyIndexes: file_pb_ticker_proto_depIdxs,
-		MessageInfos:      file_pb_ticker_proto_msgTypes,
+		GoTypes:           file_ticker_proto_goTypes,
+		DependencyIndexes: file_ticker_proto_depIdxs,
+		MessageInfos:      file_ticker_proto_msgTypes,
 	}.Build()
-	File_pb_ticker_proto = out.File
-	file_pb_ticker_proto_rawDesc = nil
-	file_pb_ticker_proto_goTypes = nil
-	file_pb_ticker_proto_depIdxs = nil
+	File_ticker_proto = out.File
+	file_ticker_proto_rawDesc = nil
+	file_ticker_proto_goTypes = nil
+	file_ticker_proto_depIdxs = nil
 }
